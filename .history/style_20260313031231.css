@@ -55,9 +55,9 @@ header {
 
 
 .logo-section {
-    display:contents;
+    display: flex;
     align-items: center;
-    text-align:center;
+    text-align: left;
 }
 
 .logo-img {
@@ -101,52 +101,6 @@ header {
 
 .main-menu ul li a:hover {
     text-decoration: underline;
-}
-
-/* تنسيق الحاوية الرئيسية للقائمة المنسدلة */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* تنسيق محتوى القائمة (مخفي في البداية) */
-.dropdown-content {
-    display: none; /* إخفاء القائمة */
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 100;
-    border-radius: 5px;
-    top: 100%; /* تظهر أسفل كلمة الأقسام مباشرة */
-    right: 0;   /* محاذاة لليمين لأن الموقع RTL */
-}
-
-/* تنسيق الروابط داخل القائمة المنسدلة */
-.dropdown-content a {
-    color: #333 !important; /* لون النص أسود ليظهر على الخلفية البيضاء */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: right;
-    border-bottom: 1px solid #eee;
-    transition: background 0.3s;
-}
-
-/* تغيير الخلفية عند تمرير الماوس على خيار معين */
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: #e67e22 !important; /* تغيير اللون للبرتقالي عند الهوفر */
-}
-
-/* إظهار القائمة عند تمرير الماوس فوق كلمة "الأقسام" */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* سهم صغير بجانب كلمة الأقسام (اختياري) */
-.dropbtn {
-    cursor: pointer;
 }
 
 
@@ -444,27 +398,5 @@ border-radius: 8px;
 border: 2px solid #e67e22;
 
 outline: none;
-
-}
-.login-btn{
-
-background: #e67e22;
-
-color: white;
-
-border: none;
-
-padding: 10px 25px;
-
-border-radius: 6px;
-
-cursor: pointer;
-
-font-size: 15px;
-
-}
-.login-btn:hover{
-
-background: #cf711f;
 
 }
