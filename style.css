@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+
 /* الهيدر */
 header {
     background-color: #e67e22; /* اللون البرتقالي الموجود في التصميم */
@@ -166,15 +167,104 @@ header {
     padding: 5px;
     outline: none;
 }
+.search-container { background: white; border-radius: 5px; padding: 5px 10px; display: flex; align-items: center; width: 250px; }
+        .search-container input { border: none; outline: none; width: 100%; padding: 5px; }
 
 /* المحتوى */
+/* --- تنسيقات الحاوية الرئيسية الجديدة --- */
 .container {
-    max-width: 1100px;
-    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- قسم الترحيب (Welcome Banner) --- */
+.welcome-banner {
+background-image: url("images/library.jpg");
+    background-size: cover;
+    background-position: center;    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.welcome-text h1 { font-size: 2.5rem; margin-bottom: 15px; }
+.welcome-text p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin-bottom: 30px; }
+
+/* أزرار الإجراء */
+.action-buttons { display:block; gap: 15px; }
+.btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-primary { background-color: #e67e22; color: white; } /* البرتقالي الخاص بك */
+.btn-primary:hover { background-color: #d35400; transform: translateY(-3px); }
+
+.btn-secondary { background-color: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); }
+.btn-secondary:hover { background-color: rgba(255,255,255,0.2); }
+
+/* --- مركز الخدمات (Services Grid) --- */
+.section-title { text-align: center; color: #333; margin-bottom: 40px; font-size: 2rem; position: relative; }
+.section-title::after { content:''; display: block; width: 60px; height: 4px; background: #e67e22; margin: 10px auto; border-radius: 2px; }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* تجاوب تلقائي مذهل */
+    gap: 30px;
+}
+
+/* تنسيق البطاقة (Card) */
+.service-card {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* حركات الهوفر (Hover Effects) */
+.service-card:hover {
+    transform: translateY(-10px); /* ترتفع للأعلى */
+    box-shadow: 0 15px 35px rgba(230, 126, 34, 0.1); /* ظل برتقالي خفيف */
+    border-color: #e67e22;
+}
+
+.card-icon { font-size: 3rem; margin-bottom: 20px; display: block; }
+.service-card h3 { color: #2c3e50; margin-bottom: 10px; font-size: 1.3rem; }
+.service-card p { color: #7f8c8d; font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; flex-grow: 1; }
+
+.card-btn {
+    background-color: #fcfcfc;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.service-card:hover .card-btn { background-color: #e67e22; color: white; }
+
+/* --- التجاوب مع الهواتف (Responsiveness) --- */
+@media (max-width: 768px) {
+    .welcome-banner { flex-direction: column; text-align: center; padding: 40px; }
+    .welcome-logo { display: none; }
+    .welcome-text h1 { font-size: 2rem; }
+    .action-buttons { justify-content: center; }
 }
 
 .hero {
@@ -297,7 +387,7 @@ footer {
 
 /* log in page*/
 .auth-page{
-    background-image: url("library.jpg");
+    background-image: url("images/library.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -361,7 +451,7 @@ footer {
 
 .auth-page{
 
-background-image: url("library.jpg");
+background-image: url("images/library.jpg");
 
 background-size: cover;
 
