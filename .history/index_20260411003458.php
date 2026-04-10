@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css?v=1.3">
 </head>
 <body>
+
+   
     <header>
     <div class="header-top">
         <div class="auth-nav">

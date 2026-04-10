@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتبة الجامعة الليبية</title>
-    <link rel="stylesheet" href="style.css?v=1.3">
+    <link rel="stylesheet" href="style.css?v=1.2">
 </head>
 <body>
+
+    <header>
+        <div class="top-nav">
+           <div class="auth-buttons">
+    <button class="btn-lang">EN/AR</button>
+
+    <a href="login.html" class="btn-login-top">Log in</a>
+
+    <a href="signup.html" class="btn-signup-top">Sign up</a>
+</div>
+            <div class="logo-section">
+                <div class="logo-text">
+                    <h1>مكتبة الجامعة الليبية  </h1>
+                    <p>منصة الكتب الأكاديمية</p>
+                </div>
+                <img src="images/logo.png" alt="شعار الجامعة" class="logo-img">
+            </div>
+        </div>
+
+         <nav class="main-menu">
+    <ul>
+         <li><a href="borrow.php">استعارة كتاب</a></li>
+          <li><a href="curriculum.php">الخطة الدراسية</a></li>
+
+
+        
+        <li class="dropdown">
+            <a href="#" class="dropbtn">الأقسام </a>
+            <div class="dropdown-content">
+                <a href="cs.php">الحاسب الآلي</a>
+                <a href="accounting.php">المحاسبة</a>
+                <a href="law.php">القانون</a>
+                <a href="business.php">إدارة الأعمال</a>
+                <a href="oilEng.php">هندسة النفط</a>
+                <a href="arcEng.php">الهندسة المعمارية</a>
+            </div>
+        </li>
+        <li><a href="index.php">الرئيسية</a></li>
+
+
+        
+    </ul>
+     <div class="search-container">
+            <span>🔍</span>
+            <input type="text" placeholder="انقر هنا للبحث...">
+        </div>
+</nav>
     <header>
     <div class="header-top">
         <div class="auth-nav">
